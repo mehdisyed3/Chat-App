@@ -35,7 +35,7 @@
  padding: 30px;
  overflow: scroll;
 }
-
+/* from here */
 .chat__message{
   position: relative;
   font-size: 16px;
@@ -62,4 +62,37 @@
   margin-left: auto;
   background-color: #d7e1cf;
   
+}
+
+   /* to here */
+
+.chat__footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer > form > input{
+  width: 90%;
+  flex: 1;
+  border-radius: 2px;
+  outline-width: 0;
+  border: none;
+  padding: 10px;
+}
+
+.chat__footer > form > button{
+  display: none;
+}
+
+.chat__footer > .MuiSvgIcon-root{
+  padding: 10px;
+  color: gray
 }

@@ -2,13 +2,15 @@ import { Avatar, IconButton } from '@material-ui/core'
 import { AttachFile, Mic, MoreVert, SearchOutlined  } from '@material-ui/icons'
 import React, { useState } from 'react'
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
+import Message from '../Message/Message'
 import './Chat.css'
 
 
 function Chat() {
   const [input,setInput] = useState('')
 
-  const sendMessage = () => {
+  const sendMessage = (e) => {
+    e.preventDefault()
 
   }
 
@@ -54,6 +56,7 @@ function Chat() {
               {new Date().toUTCString()}
             </span>
           </p>
+          <Message />
           
       </div>
       <div className='chat__footer'>
