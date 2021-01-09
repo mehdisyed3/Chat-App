@@ -57,3 +57,9 @@
   font-weight: 800;
   font-size: xx-small;
 }
+
+.chat__reciever{
+  margin-left: auto;
+  background-color: #d7e1cf;
+  
+}

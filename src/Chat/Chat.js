@@ -1,10 +1,17 @@
 import { Avatar, IconButton } from '@material-ui/core'
-import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons'
-import React from 'react'
+import { AttachFile, Mic, MoreVert, SearchOutlined  } from '@material-ui/icons'
+import React, { useState } from 'react'
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
 import './Chat.css'
 
-//9:41
+
 function Chat() {
+  const [input,setInput] = useState('')
+
+  const sendMessage = () => {
+
+  }
+
   return (
     <div className='chat'>
 
@@ -40,6 +47,30 @@ function Chat() {
               {new Date().toUTCString()}
             </span>
           </p>
+          <p className='chat__message chat__reciever '>
+          <span className='chat__name'>Oni </span>
+          this is a chat message 
+            <span className='chat__timestamp'>
+              {new Date().toUTCString()}
+            </span>
+          </p>
+          
+      </div>
+      <div className='chat__footer'>
+        <InsertEmoticonIcon />
+        <form>
+          <input
+           value={input}
+           onChange={(e)=> setInput(e.target.value)}
+           placeholder="Type a message"
+           type='text'
+           />
+           <button onClick={sendMessage} type='submit'>
+            Send
+           </button>
+           <Mic/>
+        </form>
+
       </div>
     </div>
   )
