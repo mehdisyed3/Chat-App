@@ -7,7 +7,7 @@ function Message() {
 
       <p className='message__msg '>
         <span className='message__name'>Oni </span>
-          this is a chat message Component
+          this is a chat message Component :)
             <span className='message__timestamp'>
           {new Date().toUTCString()}
         </span>
