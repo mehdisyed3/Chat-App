@@ -3,6 +3,7 @@ import './App.css';
 import Chat from './Chat/Chat';
 import Sidebar from './Sidebar/Sidebar';
 
+//This is a test
 function App() {
   return (
     <div className="app">
