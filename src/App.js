@@ -3,14 +3,14 @@ import './App.css';
 import Chat from './Chat/Chat';
 import Sidebar from './Sidebar/Sidebar';
 
-//This is a test commit
+
 function App() {
   return (
     <div className="app">
       <div className='app__body'>
 
-      <Sidebar />
-      <Chat />
+        <Sidebar />
+        <Chat />
 
       </div>
 
