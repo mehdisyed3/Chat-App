@@ -21,8 +21,8 @@ function Chat() {
         <Avatar />
 
         <div className='chat__headerInfo'>
-          <h3>Room Name</h3>
-          <p>Last seen at..</p>
+          <h3>amsterdam trip</h3>
+          <p>Last seen at.. 2:34 pm</p>
         </div>
         <div className='chat__headerRight'>
           <IconButton>
